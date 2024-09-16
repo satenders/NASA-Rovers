@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="jquery-3.6.0.js"></script>
+    <title>NASA Rover</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class=" transition-all duration-500">
+    <div class="bg-lime-200 flex p-10 justify-around gap-x-2">
+        <input id="date" type="date" class="rounded-xl p-2 bg-slate-50">
+        <input id="num" type="number" class="rounded-xl w-12 p-2 bg-slate-50" value="1" min="1" placeholder="Page Number">
+        <button id="imgbtn" type="submit" class="border-2 border-black rounded-lg w-32 bg-green-300 hover:bg-green-400 active:bg-green-500">Get Images</button>
+    </div>
+    <div class="bg-yellow-200 flex p-2 justify-around">
+        <button id="prevBtn" type="submit" class="border-2 border-black rounded-lg w-32 bg-green-300 hover:bg-green-400 active:bg-green-500">Previous Page</button>
+        <button id="nextBtn" type="submit" class="border-2 border-black rounded-lg w-32 bg-green-300 hover:bg-green-400 active:bg-green-500">Next Page</button>
+    </div>
+    <p id="err" class="grid transition-all hidden duration-500 content-center justify-center h-screen">No photos available for this data. Please refine your search!</p>
+    <div id="img-div" class="w-full h-full grid grid-cols-3 gap-2 transition-all duration-500">
+
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
